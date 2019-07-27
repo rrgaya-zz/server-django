@@ -3,3 +3,7 @@ install:
 
 test:
 	cd source && python manage.py test
+
+style:
+	isort **/*.py
+	black .
