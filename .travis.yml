@@ -1,9 +1,10 @@
+dist: xenial   # required for Python >= 3.7
 language: python
 python:
-  - 3.6
+  - 3.7.3
 install:
   - pip install -U pip
   - pip install -U pipenv
   - pipenv install --dev --system --deploy
 script:
-  - make install
+  - pytest
